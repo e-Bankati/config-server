@@ -1,0 +1,18 @@
+server:
+  port: 8020
+spring:
+  data:
+    mongodb:
+      username: bankatidb
+      password: bankatidb
+      host: localhost
+      port: 27018
+      database: wallet
+      authentication-database: admin
+
+application:
+  config:
+    users-url: http://localhost:8222/api/v1/users
+    virtualCard-url: http://localhost:8222/api/v1/virtualcard
+    transactions-url: http://localhost:8222/api/v1/transactions
+    servicestiers-url: http://localhost:8222/api/v1/servicestiers

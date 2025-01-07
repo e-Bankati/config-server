@@ -1,0 +1,27 @@
+server:
+  port: 8040
+spring:
+  data:
+    mongodb:
+      username: bankatidb
+      password: bankatidb
+      host: localhost
+      port: 27018
+      database: transaction
+      authentication-database: admin
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping: transactionConfirmation:com.example.transactionservice.kafka.TransactionConfirmation
+
+
+application:
+  config:
+    virtualCard-url: http://localhost:8222/api/v1/virtualcard
+    wallet-url: http://localhost:8222/api/v1/wallet
+    users-url: http://localhost:8222/api/v1/users
+    servicestiers-url: http://localhost:8222/api/v1/servicestiers

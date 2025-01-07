@@ -1,0 +1,22 @@
+server:
+  port: 8060
+spring:
+  data:
+    mongodb:
+      username: bankatidb
+      password: bankatidb
+      host: localhost
+      port: 27018
+      database: notification
+      authentication-database: admin
+
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: transactionGroup
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: '*'
+        spring.json.type.mapping: transactionConfirmation:com.example.notificationservice.kafka.TransactionConfirmation

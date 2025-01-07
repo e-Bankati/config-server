@@ -1,0 +1,54 @@
+server:
+  port: 8222
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+      routes:
+        - id: user-service
+          uri: lb:http://USER-SERVICE
+          predicates:
+            - Path=/api/v1/users/**
+
+
+        - id: wallet-service
+          uri: lb:http://WALLET-SERVICE
+          predicates:
+            - Path=/api/v1/wallet/**
+
+        - id: walletcrypto-service
+          uri: lb:http://WALLETCRYPTO-SERVICE
+          predicates:
+            - Path=/api/v1/walletcrypto/**
+
+
+        - id: virtualcard-service
+          uri: lb:http://VIRTUALCARD-SERVICE
+          predicates:
+            - Path=/api/v1/virtualcard/**
+
+        - id: transaction-service
+          uri: lb:http://TRANSACTION-SERVICE
+          predicates:
+            - Path=/api/v1/transactions/**
+
+        - id: servicestiers-service
+          uri: lb:http://SERVICESTIERS-SERVICE
+          predicates:
+            - Path=/api/v1/servicestiers/**
+
+        - id: batch-service
+          uri: lb:http://BATCH-SERVICE
+          predicates:
+            - Path=/api/v1/batch/**
+
+        - id: depense-service
+          uri: lb:http://DEPENSE-SERVICE
+          predicates:
+            - Path=/api/v1/depenses/**
+
+
