@@ -1,6 +1,3 @@
-FROM ubuntu:latest
-LABEL authors="houda"
-
 # Use an official OpenJDK runtime as the base image
 FROM openjdk:17-jdk-slim
 
