@@ -13,8 +13,8 @@ server:
 
 application:
   config:
-    users-url: https://gateway-tyir.onrender.com/api/v1/users
-    wallet-url: https://gateway-tyir.onrender.com/api/v1/wallet
-    transactions-url: https://gateway-tyir.onrender.com/api/v1/transactions
-    servicestiers-url: https://gateway-tyir.onrender.com/api/v1/servicestiers
+    users-url: https://user-sumh.onrender.com/api/v1/users
+    wallet-url: https://walletservice-6ubo.onrender.com/api/v1/wallet
+    transactions-url: https://transactionservice-pyd7.onrender.com/api/v1/transactions
+    servicestiers-url: https://servicestier.onrender.com/api/v1/servicestiers
 

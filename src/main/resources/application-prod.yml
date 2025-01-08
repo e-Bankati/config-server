@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+eureka:
+  instance:
+    hostname: bankati-config-server.onrender.com
+  client:
+    serviceUrl:
+      defaultZone:
+        ${EUREKA_HOST:https://bankati-discovery.onrender.com/eureka/}
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false

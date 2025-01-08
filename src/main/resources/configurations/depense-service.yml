@@ -13,5 +13,5 @@ server:
 application:
   config:
     users-url: https://gateway-tyir.onrender.com/api/v1/users
-    transactions-url: https://gateway-tyir.onrender.com/api/v1/transactions
+    transactions-url: https://user-sumh.onrender.com/api/v1/transactions
 
