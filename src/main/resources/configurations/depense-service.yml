@@ -1,17 +1,17 @@
 server:
   port: 8077
-spring:
-  data:
-    mongodb:
-      username: bankatidb
-      password: bankatidb
-      host: localhost
-      port: 27018
-      database: depense
-      authentication-database: admin
+#spring:
+#  data:
+#    mongodb:
+#      username: bankatidb
+#      password: bankatidb
+#      host: localhost
+#      port: 27018
+#      database: depense
+#      authentication-database: admin
 
 application:
   config:
-    users-url: http://localhost:8222/api/v1/users
-    transactions-url: http://localhost:8222/api/v1/transactions
+    users-url: https://user-sumh.onrender.com/api/v1/users
+    transactions-url: https://transactionservice-pyd7.onrender.com/api/v1/transactions
 
