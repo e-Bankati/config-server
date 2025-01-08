@@ -1,15 +1,15 @@
 server:
   port: 8021
-spring:
-  data:
-    mongodb:
-      username: bankatidb
-      password: bankatidb
-      host: localhost
-      port: 27018
-      database: batch
-      authentication-database: admin
+#spring:
+#  data:
+#    mongodb:
+#      username: bankatidb
+#      password: bankatidb
+#      host: localhost
+#      port: 27018
+#      database: batch
+#      authentication-database: admin
 
 application:
   config:
-    transactions-url: http://localhost:8222/api/v1/transactions
+    transactions-url: https://gateway-tyir.onrender.com/api/v1/transactions

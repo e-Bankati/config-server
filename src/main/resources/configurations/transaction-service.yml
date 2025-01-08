@@ -21,7 +21,7 @@ server:
 
 application:
   config:
-    virtualCard-url: https://virtualcardservice.onrender.com/api/v1/virtualcard
-    wallet-url: https://walletservice-6ubo.onrender.com/api/v1/wallet
-    users-url: https://user-sumh.onrender.com/api/v1/users
-    servicestiers-url: https://servicestier.onrender.com/api/v1/servicestiers
+    virtualCard-url: https://gateway-tyir.onrender.com/api/v1/virtualcard
+    wallet-url: https://gateway-tyir.onrender.com/api/v1/wallet
+    users-url: https://gateway-tyir.onrender.com/api/v1/users
+    servicestiers-url: https://gateway-tyir.onrender.com/api/v1/servicestiers

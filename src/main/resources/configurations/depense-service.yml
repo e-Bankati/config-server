@@ -12,6 +12,6 @@ server:
 
 application:
   config:
-    users-url: https://user-sumh.onrender.com/api/v1/users
-    transactions-url: https://transactionservice-pyd7.onrender.com/api/v1/transactions
+    users-url: https://gateway-tyir.onrender.com/api/v1/users
+    transactions-url: https://gateway-tyir.onrender.com/api/v1/transactions
 
